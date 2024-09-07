@@ -1,4 +1,4 @@
-# mari2t_portfolio
+# mari2t_portfolio_next
 
 ## Overview
 
@@ -14,7 +14,7 @@ This is a portfolio site of my works.
 
 2024/9/7
 
-[💻 UPDATES](./UPDATES.md)
+[UPDATES](./UPDATES.md)
 
 ## Purpose of creation
 

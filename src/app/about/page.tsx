@@ -83,7 +83,6 @@ export default function About() {
         </div>
       </div>
 
-      {/* 自己紹介セクション */}
       <div className="w-full max-w-3xl">
         <h1 className="text-3xl font-bold mb-4 text-center">About Me</h1>
         {profiles.map((section, index) => (
