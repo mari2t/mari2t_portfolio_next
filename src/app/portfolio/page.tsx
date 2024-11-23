@@ -10,9 +10,17 @@ import {
   BiLogoJavascript,
 } from "react-icons/bi";
 import { TbBrandNextjs, TbApi, TbBrandSvelte } from "react-icons/tb";
-import { SiRubyonrails } from "react-icons/si";
+import { SiRubyonrails, SiShadcnui } from "react-icons/si";
 
 const projects = [
+  {
+    title: "analog_timer",
+    overview: "Analog Timer",
+    useTech: "Typescript,Next,Tailwind CSS,Shadcn",
+    creationday: "2024/11/19",
+    imgUrl: "/img/imgAnalogTimer.png",
+    githubUrl: "https://github.com/mari2t/rainbow_analog_timer",
+  },
   {
     title: "alcohol_calculator_next",
     overview: "Alcohol Calculator",
@@ -201,6 +209,9 @@ const TechIcon = ({ techName }: TechIconProps) => {
       )}
       {techName === "Tailwind CSS" && (
         <BiLogoTailwindCss className="text-blue-800" size="1.6em" />
+      )}
+      {techName === "Shadcn" && (
+        <SiShadcnui className="text-blue-800" size="1.6em" />
       )}
       {techName === "Next" && (
         <TbBrandNextjs className="text-blue-800" size="1.6em" />

@@ -10,9 +10,17 @@ import {
   BiLogoJavascript,
 } from "react-icons/bi";
 import { TbBrandNextjs, TbApi, TbBrandSvelte } from "react-icons/tb";
-import { SiRubyonrails } from "react-icons/si";
+import { SiRubyonrails, SiShadcnui } from "react-icons/si";
 
 const projects = [
+  {
+    title: "analog_timer",
+    overview: "Analog Timer",
+    useTech: "Typescript,Next,Tailwind CSS,Shadcn",
+    creationday: "2024/11/19",
+    imgUrl: "/img/imgAnalogTimer.png",
+    githubUrl: "https://github.com/mari2t/rainbow_analog_timer",
+  },
   {
     title: "alcohol_calculator_next",
     overview: "Alcohol Calculator",
@@ -28,14 +36,6 @@ const projects = [
     creationday: "2024/1/27",
     imgUrl: "/img/imgRuby-kids-todo.png",
     githubUrl: "https://github.com/mari2t/ruby-kids-todo",
-  },
-  {
-    title: "subscription-management",
-    overview: "Subscription Management App",
-    useTech: "Typescript,Next,Tailwind CSS",
-    creationday: "2023/12/28",
-    imgUrl: "/img/imgSubscription-management.png",
-    githubUrl: "https://github.com/mari2t/subscription-management",
   },
 ];
 
@@ -75,11 +75,10 @@ export default function Home() {
               className="rounded-full mb-4"
             />
             <p className="text-gray-700 mb-4">
-              I am a technical professional based in Tokyo, working in quality
-              control. <br />I have been studying web technologies, <br />
-              focusing on JavaScript and TypeScript, since September 2022.
-              <br /> I have obtained the Basic Information Technology Engineer
-              certification and AWS Certified Cloud Practitioner.
+              I am currently job hunting. 💻 <br />I took the Applied
+              Information Technician exam in October 2024. <br />
+              Recently I am interested in generative AI topics. <br /> I’ve
+              subscribed to related services and actively use them.
             </p>
             <Link
               href="/about"
@@ -202,6 +201,9 @@ const TechIcon = ({ techName }: TechIconProps) => {
       )}
       {techName === "RubyOnRails" && (
         <SiRubyonrails className="text-blue-800" size="1.6em" />
+      )}
+      {techName === "Shadcn" && (
+        <SiShadcnui className="text-blue-800" size="1.6em" />
       )}
     </div>
   );

@@ -8,23 +8,24 @@ import { FaGithub } from "react-icons/fa";
 export default function About() {
   const profiles = [
     {
-      title: "Current Status",
+      title: "😄Current Status",
       profileItems: [
-        "I'm a company employee living in Tokyo.",
-        "Currently studying web-related technologies.",
-        "Planning to take the Applied Information Technology Engineer Examination in October 2024.",
+        "I am currently job hunting. ",
+        "I took the Applied Information Technician exam in October 2024.",
+        "Recently I am interested in generative AI topics. ",
+        "I’ve subscribed to AI services and actively use them.",
       ],
     },
     {
-      title: "Work Experience",
+      title: "💼Work Experience",
       profileItems: [
         "I've been working in quality control for about 10 years.",
-        "My work consists of approximately 60% equipment operation and 40% PC work.",
         "I majored in engineering at university.",
+        "I have promoted operational efficiency through the use of VBA and Python.",
       ],
     },
     {
-      title: "Certifications",
+      title: "📜Certifications",
       profileItems: [
         "AWS Certified Cloud Practitioner (2024)",
         "Fundamental Information Technology Engineer Examination (2021)",
@@ -33,7 +34,7 @@ export default function About() {
       ],
     },
     {
-      title: "Programming Journey",
+      title: "💻Programming Journey",
       profileItems: [
         "Started learning in May 2022 to improve work efficiency.",
         "Often use VBA for work efficiency improvements.",
@@ -41,7 +42,7 @@ export default function About() {
       ],
     },
     {
-      title: "Web Technologies",
+      title: "🔍Web Technologies",
       profileItems: [
         "Started learning JavaScript in September 2022.",
         "Focusing on JavaScript and TypeScript, while also trying other languages.",
@@ -49,11 +50,11 @@ export default function About() {
       ],
     },
     {
-      title: "Interests",
+      title: "✨Interests",
       profileItems: [
-        "My dream is to visit all prefectures in Japan. I'd like to visit the remaining ones: Shizuoka, Yamanashi, and Fukushima.",
-        "I invest in stocks for dividends and shareholder benefits.",
-        "I often read books when I encounter difficulties.",
+        "Travel: I enjoy exploring unfamiliar towns and cities. I have visited every prefecture in Japan.",
+        "Investing: I engage in stock investments focusing on perks and dividends.",
+        "Reading: I often turn to books when I face challenges.",
       ],
     },
   ];
