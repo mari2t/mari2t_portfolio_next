@@ -1,6 +1,6 @@
 # UPDATES
 
-## 2024/2/5
+## 2025/2/5
 
 1. Added next-intl for multilingual support
 
