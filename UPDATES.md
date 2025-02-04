@@ -1,5 +1,9 @@
 # UPDATES
 
+## 2024/2/5
+
+1. Added next-intl for multilingual support
+
 ## 2024/11/23
 
 1. Add "Analog Timer"

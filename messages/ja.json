@@ -1,0 +1,10 @@
+{
+    "HomePage": {
+      "language": "言語を選択",
+      "title": "こんにちは、世界！",
+      "about": "Aboutページへ",
+      "message": "こんにちは {name}!",
+      "followers": "あなたのフォロワーは {count, plural, =0 {いません。} =1 {一人います。} other {# 人です。}}",
+      "gender": "{gender, select, female {彼女} male {彼} other {あなた}} はオンラインです。"
+    }
+  }
