@@ -1,5 +1,9 @@
 # UPDATES
 
+## 2025/2/7
+
+1. Corrected massage about the top page.
+
 ## 2025/2/6
 
 1. Layout,pages is compatible with next-intl.

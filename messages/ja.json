@@ -1,10 +1,24 @@
 {
-    "HomePage": {
-      "language": "言語を選択",
-      "title": "こんにちは、世界！",
-      "about": "Aboutページへ",
-      "message": "こんにちは {name}!",
-      "followers": "あなたのフォロワーは {count, plural, =0 {いません。} =1 {一人います。} other {# 人です。}}",
-      "gender": "{gender, select, female {彼女} male {彼} other {あなた}} はオンラインです。"
+  "HomePage": {
+    "language": "言語を選択",
+    "about": "自己紹介ページへ",
+    "selfIntro": {
+      "name": "Mari2t",
+      "jobStatus": "現在、就職活動中です。💻",
+      "exam": "2024年10月に応用情報技術者試験に合格しました。",
+      "interest": "最近は生成系AIに興味があります。",
+      "activity": "関連サービスに登録し、活用しています。",
+      "viewMore": "もっと見る"
+    },
+    "skills": {
+      "title": "スキル",
+      "viewAll": "すべてのスキルを見る"
+    },
+    "projects": {
+      "title": "最近のプロジェクト",
+      "created": "作成日",
+      "viewOnGithub": "GitHubで見る",
+      "viewMore": "もっと見る"
     }
   }
+}

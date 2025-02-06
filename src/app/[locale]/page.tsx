@@ -93,18 +93,15 @@ const TechIcon = ({ techName }: TechIconProps) => {
     </div>
   );
 };
+
 export default function HomePage() {
   const t = useTranslations("HomePage");
   return (
     <div className="container mx-auto px-4">
-      <h1 className="text-3xl font-bold mb-6 text-center">
-        Welcome to My Portfolio
-      </h1>
-
       <div className="max-w-2xl mx-auto">
         {/* Self-introduction Section */}
         <section className="mb-12 text-center">
-          <h2 className="text-2xl font-semibold mb-4">Mari2t</h2>
+          <h2 className="text-2xl font-semibold mb-4">{t("selfIntro.name")}</h2>
           <div className="flex flex-col items-center">
             <Image
               src="/img/plofilePic.jpg"
@@ -114,23 +111,25 @@ export default function HomePage() {
               className="rounded-full mb-4"
             />
             <p className="text-gray-700 mb-4">
-              I am currently job hunting. 💻 <br />I took the Applied
-              Information Technician exam in October 2024. <br />
-              Recently I am interested in generative AI topics. <br /> I’ve
-              subscribed to related services and actively use them.
+              {t("selfIntro.jobStatus")} <br />
+              {t("selfIntro.exam")} <br />
+              {t("selfIntro.interest")} <br />
+              {t("selfIntro.activity")}
             </p>
             <Link
               href="/about"
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             >
-              View More About Me
+              {t("selfIntro.viewMore")}
             </Link>
           </div>
         </section>
 
         {/* Skills Section */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4 text-center">My Skills</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-center">
+            {t("skills.title")}
+          </h2>
           <div className="grid grid-cols-2 gap-4 mb-4">
             {skills.map((skill) => (
               <div
@@ -147,7 +146,7 @@ export default function HomePage() {
               href="/skills"
               className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
             >
-              View All Skills
+              {t("skills.viewAll")}
             </Link>
           </div>
         </section>
@@ -156,7 +155,7 @@ export default function HomePage() {
       {/* Projects Section */}
       <section>
         <h2 className="text-2xl font-semibold mb-4 text-center">
-          Recent Projects
+          {t("projects.title")}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
           {projects.map((project) => (
@@ -182,7 +181,7 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-gray-600 mb-2">
-                  Created: {project.creationday}
+                  {t("projects.created")} {project.creationday}
                 </p>
                 <a
                   href={project.githubUrl}
@@ -190,7 +189,7 @@ export default function HomePage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View on GitHub
+                  {t("projects.viewOnGithub")}
                 </a>
               </div>
             </div>
@@ -201,7 +200,7 @@ export default function HomePage() {
             href="/portfolio"
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           >
-            View More Projects
+            {t("projects.viewMore")}
           </Link>
         </div>
       </section>
