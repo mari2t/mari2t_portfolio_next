@@ -1,5 +1,9 @@
 # UPDATES
 
+## 2025/2/6
+
+1. Layout,pages is compatible with next-intl.
+
 ## 2025/2/5
 
 1. Added next-intl for multilingual support

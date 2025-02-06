@@ -2,6 +2,25 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import type { Metadata } from "next";
+import "./globals.css";
+import Link from "next/link";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: (typeof routing.locales)[number] };
+}): Promise<Metadata> {
+  const messages = (await getMessages({ locale: params.locale })) as Record<
+    string,
+    string
+  >;
+
+  return {
+    title: messages["metadata.title"] as string,
+    description: messages["metadata.description"] as string,
+  };
+}
 
 export default async function LocaleLayout({
   children,
@@ -10,20 +29,59 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
+  // `locale` が有効か確認
+  if (!routing.locales.includes(locale as "en" | "ja")) {
     notFound();
   }
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
-  const messages = await getMessages();
+  // ロケールに応じたメッセージを取得
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <header className="bg-white shadow-md">
+            <nav className="container mx-auto px-6 py-4">
+              <div className="flex justify-between items-center">
+                <div className="text-xl font-bold text-gray-800">
+                  <Link href={`/${locale}`}>My Portfolio</Link>
+                </div>
+                <ul className="flex space-x-4">
+                  <li>
+                    <Link
+                      href={`/${locale}/portfolio`}
+                      className="text-gray-800 hover:text-blue-600"
+                    >
+                      Portfolio
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href={`/${locale}/skills`}
+                      className="text-gray-800 hover:text-blue-600"
+                    >
+                      Skills
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href={`/${locale}/about`}
+                      className="text-gray-800 hover:text-blue-600"
+                    >
+                      About Me
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+          <main className="container mx-auto px-6 py-4">{children}</main>
+          <footer className="bg-white shadow-md mt-8">
+            <div className="container mx-auto px-6 py-4 text-center text-gray-600">
+              © 2024 Mari2t. All rights reserved.
+            </div>
+          </footer>
         </NextIntlClientProvider>
       </body>
     </html>
