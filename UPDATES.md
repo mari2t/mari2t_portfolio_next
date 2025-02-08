@@ -1,5 +1,9 @@
 # UPDATES
 
+## 2025/2/8
+
+1. Added button to switch languages.
+
 ## 2025/2/7
 
 1. Corrected massage about the top page.

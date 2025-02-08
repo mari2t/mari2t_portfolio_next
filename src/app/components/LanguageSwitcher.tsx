@@ -1,41 +1,37 @@
 "use client";
 
+import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
-import { useRouter } from "next/navigation";
-import { useTransition } from "react";
-import { usePathname } from "next/navigation";
 
 export default function LanguageSwitcher() {
-  const locale = useLocale();
+  const locale = useLocale(); // 現在の言語を取得
   const router = useRouter();
   const pathname = usePathname();
-  const [isPending, startTransition] = useTransition();
 
-  const switchLocale = (newLocale: string) => {
-    startTransition(() => {
-      router.replace(`/${newLocale}${pathname}`);
-    });
+  const switchLanguage = (newLocale: string) => {
+    const newPath = `/${newLocale}${pathname.substring(3)}`; // `/ja/...` → `/en/...`
+    router.push(newPath);
   };
 
   return (
     <div className="flex space-x-2">
       <button
-        className={`px-2 py-1 rounded ${
-          locale === "en" ? "bg-blue-500 text-white" : "bg-gray-200"
+        onClick={() => switchLanguage("ja")}
+        disabled={locale === "ja"}
+        className={`p-2 border rounded ${
+          locale === "ja" ? "bg-gray-300" : "bg-white"
         }`}
-        onClick={() => switchLocale("en")}
-        disabled={isPending}
       >
-        EN
+        日本語
       </button>
       <button
-        className={`px-2 py-1 rounded ${
-          locale === "ja" ? "bg-blue-500 text-white" : "bg-gray-200"
+        onClick={() => switchLanguage("en")}
+        disabled={locale === "en"}
+        className={`p-2 border rounded ${
+          locale === "en" ? "bg-gray-300" : "bg-white"
         }`}
-        onClick={() => switchLocale("ja")}
-        disabled={isPending}
       >
-        JA
+        English
       </button>
     </div>
   );

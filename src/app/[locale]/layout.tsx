@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import type { Metadata } from "next";
 import "./globals.css";
-import Link from "next/link";
+import Header from "../components/Header";
 
 export async function generateMetadata({
   params,
@@ -41,41 +41,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <header className="bg-white shadow-md">
-            <nav className="container mx-auto px-6 py-4">
-              <div className="flex justify-between items-center">
-                <div className="text-xl font-bold text-gray-800">
-                  <Link href={`/${locale}`}>My Portfolio</Link>
-                </div>
-                <ul className="flex space-x-4">
-                  <li>
-                    <Link
-                      href={`/${locale}/portfolio`}
-                      className="text-gray-800 hover:text-blue-600"
-                    >
-                      Portfolio
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href={`/${locale}/skills`}
-                      className="text-gray-800 hover:text-blue-600"
-                    >
-                      Skills
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href={`/${locale}/about`}
-                      className="text-gray-800 hover:text-blue-600"
-                    >
-                      About Me
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </header>
+          <Header />
           <main className="container mx-auto px-6 py-4">{children}</main>
           <footer className="bg-white shadow-md mt-8">
             <div className="container mx-auto px-6 py-4 text-center text-gray-600">
