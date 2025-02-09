@@ -1,5 +1,9 @@
 # UPDATES
 
+## 2025/2/9
+
+1. Conversion of About page to Japanese and English.
+
 ## 2025/2/8
 
 1. Added button to switch languages.

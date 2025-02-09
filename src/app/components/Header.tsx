@@ -3,13 +3,13 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center p-4 border-b">
+    <header className="flex justify-between items-center p-2 border-b">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-xl font-bold text-gray-800">
+          <div className="text-2xl font-bold text-gray-800">
             <Link href="/">My Portfolio</Link>
           </div>
-          <ul className="flex space-x-4">
+          <ul className="flex space-x-8">
             <li>
               <Link
                 href="/portfolio"
@@ -32,10 +32,9 @@ export default function Header() {
               </Link>
             </li>
           </ul>
+          <LanguageSwitcher />
         </div>
       </nav>
-
-      <LanguageSwitcher />
     </header>
   );
 }

@@ -20,5 +20,60 @@
       "viewOnGithub": "View on GitHub",
       "viewMore": "View More Projects"
     }
+  },
+  "AboutPage": {
+    "title": "About Me",
+    "sections": {
+      "currentStatus": {
+        "title": "😄Current Status",
+        "items": [
+          "I am currently job hunting.",
+          "I passed the Applied Information Technology Engineer Exam in October 2024.",
+          "In 2025, I plan to take the LPIC-1 and Registered Information Security Specialist exams."
+        ]
+      },
+      "workExperience": {
+        "title": "💼Work Experience",
+        "items": [
+          "I have about 10 years of experience in quality control.",
+          "I majored in engineering at university.",
+          "I have promoted operational efficiency using VBA and Python."
+        ]
+      },
+      "certifications": {
+        "title": "📜Certifications",
+        "items": [
+          "Applied Information Technology Engineer Exam (2024)",
+          "AWS Certified Cloud Practitioner (2024)",
+          "Fundamental Information Technology Engineer Exam (2021)",
+          "TOEIC Score: 865 (2019)"
+        ]
+      },
+      "programmingJourney": {
+        "title": "💻Programming Journey",
+        "items": [
+          "I started learning programming in May 2022 to improve work efficiency.",
+          "I often use VBA for automation and efficiency improvements.",
+          "I have experience in video and image processing using Python."
+        ]
+      },
+      "webTechnologies": {
+        "title": "🔍Web Technologies",
+        "items": [
+          "I started learning JavaScript in September 2022.",
+          "I primarily focus on JavaScript and TypeScript while also exploring other languages.",
+          "I have used AWS services such as S3, EC2, and RDS multiple times."
+        ]
+      },
+      "interests": {
+        "title": "✨Interests",
+        "items": [
+          "Travel: I enjoy exploring unfamiliar towns and cities. I have visited every prefecture in Japan.",
+          "Investing: I engage in stock investments focusing on perks and dividends.",
+          "Reading: I often turn to books when I face challenges."
+        ]
+      }
+    }
   }
+
 }
