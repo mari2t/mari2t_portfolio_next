@@ -5,6 +5,7 @@
 1. Conversion of Portfolio page to Japanese and English.
 2. fix about any type.
 3. fix about responsive.
+4. Remove superfluous imports.
 
 ## 2025/2/9
 

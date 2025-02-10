@@ -1,9 +1,5 @@
 "use client";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/routing";
-import { IconContext } from "react-icons";
-import { FaGithub } from "react-icons/fa";
 
 export default function About() {
   const t = useTranslations("AboutPage");
