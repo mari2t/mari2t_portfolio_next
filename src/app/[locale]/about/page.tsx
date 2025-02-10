@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { IconContext } from "react-icons";
-import { BsTwitter } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 
 export default function About() {
@@ -33,12 +32,6 @@ export default function About() {
           <IconContext.Provider value={{ color: "#adb4b9", size: "1.6em" }}>
             <Link href="https://github.com/mari2t">
               <FaGithub />
-            </Link>
-          </IconContext.Provider>
-
-          <IconContext.Provider value={{ color: "#adb4b9", size: "1.6em" }}>
-            <Link href="https://twitter.com/gussuri49neru">
-              <BsTwitter />
             </Link>
           </IconContext.Provider>
         </div>

@@ -1,5 +1,9 @@
 # UPDATES
 
+## 2025/2/10
+
+1. Conversion of Portfolio page to Japanese and English.
+
 ## 2025/2/9
 
 1. Conversion of About page to Japanese and English.

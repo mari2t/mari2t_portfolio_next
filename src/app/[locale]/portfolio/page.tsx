@@ -137,7 +137,7 @@ export default function Portfolio() {
 
   return (
     <div className="container mx-auto px-4">
-      <h1 className="text-3xl font-bold mb-6">My Portfolio</h1>
+      <h1 className="text-2xl font-bold mb-6">Portfolios</h1>
       <div className="mb-6">
         <h2 className="text-xl font-semibold mb-2">Filter by Technology:</h2>
         <div className="flex flex-wrap gap-2">
