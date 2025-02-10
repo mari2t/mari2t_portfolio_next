@@ -45,7 +45,7 @@ export default async function LocaleLayout({
           <main className="container mx-auto px-6 py-4">{children}</main>
           <footer className="bg-white shadow-md mt-8">
             <div className="container mx-auto px-6 py-4 text-center text-gray-600">
-              © 2024 Mari2t. All rights reserved.
+              © 2025 Mari2t. All rights reserved.
             </div>
           </footer>
         </NextIntlClientProvider>

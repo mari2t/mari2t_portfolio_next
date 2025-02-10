@@ -19,7 +19,8 @@ export default function About() {
 
   return (
     <div className="flex flex-col items-center space-y-12">
-      <div className="w-64 h-64 relative">
+      <h1 className="text-2xl font-bold text-center">{t("title")}</h1>
+      <div className="w-48 h-48 relative">
         <Image
           src="/img/plofilePic.jpg"
           alt="Profile Picture"
@@ -38,7 +39,6 @@ export default function About() {
       </div>
 
       <div className="w-full max-w-2xl">
-        <h1 className="text-3xl font-bold mb-4 text-center">{t("title")}</h1>
         {profileSections.map((section) => (
           <div key={section} className="mb-4">
             <h2 className="text-2xl font-semibold mb-2">
