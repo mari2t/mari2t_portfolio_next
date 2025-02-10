@@ -18,37 +18,25 @@ export default function About() {
   ];
 
   return (
-    <div className="flex flex-col items-center space-y-12">
-      <h1 className="text-2xl font-bold text-center">{t("title")}</h1>
-      <div className="w-48 h-48 relative">
-        <Image
-          src="/img/plofilePic.jpg"
-          alt="Profile Picture"
-          width={256}
-          height={256}
-          className="rounded-full"
-        />
+    <div className="flex flex-col items-center space-y-12 bg-gray-100 min-h-screen py-12 px-4">
+      <h1 className="text-3xl font-bold text-center text-gray-800">
+        {t("title")}
+      </h1>
 
-        <div className="flex justify-center space-x-4 mt-4">
-          <IconContext.Provider value={{ color: "#adb4b9", size: "1.6em" }}>
-            <Link href="https://github.com/mari2t">
-              <FaGithub />
-            </Link>
-          </IconContext.Provider>
-        </div>
-      </div>
-
-      <div className="w-full max-w-2xl">
+      {/* プロフィールセクション */}
+      <div className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
         {profileSections.map((section) => (
-          <div key={section} className="mb-4">
-            <h2 className="text-2xl font-semibold mb-2">
+          <div key={section} className="bg-white p-6 rounded-lg shadow-md">
+            <h2 className="text-xl font-semibold text-gray-800 mb-3">
               {t(`sections.${section}.title`)}
             </h2>
-            <ul className="list-disc list-inside text-gray-600">
+            <ul className="list-disc list-inside text-gray-600 space-y-2">
               {t
                 .raw(`sections.${section}.items`)
                 .map((item: string, index: number) => (
-                  <li key={index}>{item}</li>
+                  <li key={index} className="text-gray-700">
+                    {item}
+                  </li>
                 ))}
             </ul>
           </div>

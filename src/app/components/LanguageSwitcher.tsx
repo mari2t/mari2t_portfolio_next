@@ -3,14 +3,19 @@
 import { usePathname, useRouter } from "next/navigation";
 import { useLocale } from "next-intl";
 
-export default function LanguageSwitcher() {
-  const locale = useLocale(); // 現在の言語を取得
+interface LanguageSwitcherProps {
+  closeMenu?: () => void; // メニューを閉じる関数
+}
+
+export default function LanguageSwitcher({ closeMenu }: LanguageSwitcherProps) {
+  const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
 
   const switchLanguage = (newLocale: string) => {
-    const newPath = `/${newLocale}${pathname.substring(3)}`; // `/ja/...` → `/en/...`
+    const newPath = `/${newLocale}${pathname.substring(3)}`;
     router.push(newPath);
+    if (closeMenu) closeMenu(); // 言語切り替え後にメニューを閉じる
   };
 
   return (
@@ -18,8 +23,10 @@ export default function LanguageSwitcher() {
       <button
         onClick={() => switchLanguage("ja")}
         disabled={locale === "ja"}
-        className={`p-2 border rounded ${
-          locale === "ja" ? "bg-gray-300" : "bg-white"
+        className={`px-3 py-1 border rounded-lg transition duration-300 ${
+          locale === "ja"
+            ? "bg-blue-600 text-white"
+            : "bg-white hover:bg-gray-100"
         }`}
       >
         日本語
@@ -27,8 +34,10 @@ export default function LanguageSwitcher() {
       <button
         onClick={() => switchLanguage("en")}
         disabled={locale === "en"}
-        className={`p-2 border rounded ${
-          locale === "en" ? "bg-gray-300" : "bg-white"
+        className={`px-3 py-1 border rounded-lg transition duration-300 ${
+          locale === "en"
+            ? "bg-blue-600 text-white"
+            : "bg-white hover:bg-gray-100"
         }`}
       >
         English
