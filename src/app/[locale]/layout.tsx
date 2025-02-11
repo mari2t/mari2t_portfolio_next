@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -42,7 +43,10 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider messages={messages}>
           <Header />
-          <main className="container mx-auto px-6 py-4">{children}</main>
+          <main className="container mx-auto px-6 py-4">
+            {children}
+            <Analytics />
+          </main>
           <footer className="bg-white shadow-md mt-8">
             <div className="container mx-auto px-6 py-4 text-center text-gray-600">
               © 2025 Mari2t. All rights reserved.

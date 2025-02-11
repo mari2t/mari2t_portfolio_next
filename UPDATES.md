@@ -1,5 +1,9 @@
 # UPDATES
 
+## 2025/2/11
+
+1. import vercel/analytics
+
 ## 2025/2/10
 
 1. Conversion of Portfolio page to Japanese and English.
