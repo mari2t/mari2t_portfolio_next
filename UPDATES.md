@@ -3,6 +3,7 @@
 ## 2025/2/12
 
 1. Fixed background bleed-through.
+2. Remove profile picture and add Github link.
 
 ## 2025/2/11
 

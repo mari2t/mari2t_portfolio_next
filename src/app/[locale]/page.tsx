@@ -12,6 +12,9 @@ import {
 } from "react-icons/bi";
 import { TbBrandNextjs, TbApi, TbBrandSvelte } from "react-icons/tb";
 import { SiRubyonrails, SiShadcnui } from "react-icons/si";
+import { IconContext } from "react-icons";
+import { FaGithub } from "react-icons/fa";
+
 const projects = [
   {
     title: "analog_timer",
@@ -103,13 +106,13 @@ export default function HomePage() {
         <section className="mb-12 text-center">
           <h2 className="text-2xl font-semibold mb-4">{t("selfIntro.name")}</h2>
           <div className="flex flex-col items-center">
-            <Image
-              src="/img/plofilePic.jpg"
-              alt="Profile Picture"
-              width={150}
-              height={150}
-              className="rounded-full mb-4"
-            />
+            <div className="flex justify-center space-x-4 mt-2 mb-2">
+              <IconContext.Provider value={{ color: "#adb4b9", size: "2em" }}>
+                <Link href="https://github.com/mari2t">
+                  <FaGithub />
+                </Link>
+              </IconContext.Provider>
+            </div>
             <p className="text-gray-700 mb-4">
               {t("selfIntro.jobStatus")} <br />
               {t("selfIntro.exam")} <br />
