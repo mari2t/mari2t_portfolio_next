@@ -1,5 +1,9 @@
 # UPDATES
 
+## 2025/2/12
+
+1. Fixed background bleed-through.
+
 ## 2025/2/11
 
 1. import vercel/analytics
