@@ -1,5 +1,9 @@
 # UPDATES
 
+## 2025/3/31
+
+1. Update to reflect recent changes.
+
 ## 2025/2/12
 
 1. Fixed background bleed-through.

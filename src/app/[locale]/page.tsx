@@ -114,8 +114,6 @@ export default function HomePage() {
               </IconContext.Provider>
             </div>
             <p className="text-gray-700 mb-4">
-              {t("selfIntro.jobStatus")} <br />
-              {t("selfIntro.exam")} <br />
               {t("selfIntro.interest")} <br />
               {t("selfIntro.activity")}
             </p>
