@@ -4,10 +4,10 @@
     "about": "Go to the about page",
     "selfIntro": {
       "name": "Mari2t",
-      "jobStatus": "I am currently job hunting. 💻",
+      "jobStatus": "I currently work at an IT company. 🖥️",
       "exam": "I passed the Applied Information Technician exam in December 2024.",
       "interest": "Recently I am interested in generative AI topics.",
-      "activity": "I plan to take the LPIC-1 and Registered Information Security Specialist exams.",
+      "activity": "I'm planning to take the Registered Information Security Specialist exam in 2025.",
       "viewMore": "View More About Me"
     },
     "skills": {
@@ -27,16 +27,16 @@
       "currentStatus": {
         "title": "😄Current Status",
         "items": [
-          "I'm currently working in the IT field. 🖥️",
+          "I currently work at an IT company. 🖥️",
           "I passed the Applied Information Technology Engineer Exam in December 2024.",
-          "In 2025, I plan to take the LPIC-1 and Registered Information Security Specialist exams."
+          "I took the Registered Information Security Specialist exam in the spring of 2025, but I didn't pass because of the afternoon session. I really hope to pass this fall."
         ]
       },
       "workExperience": {
         "title": "💼Work Experience",
         "items": [
-          "I have about 10 years of experience in quality control.",
           "I majored in engineering at university.",
+          "I have about 10 years of experience in quality control.",
           "I have promoted operational efficiency using VBA and Python."
         ]
       },

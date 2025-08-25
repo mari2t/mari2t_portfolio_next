@@ -1,5 +1,5 @@
 "use client";
-import { FaPython, FaReact, FaVuejs, FaGitAlt } from "react-icons/fa";
+import { FaPython, FaReact, FaVuejs } from "react-icons/fa";
 import {
   SiTypescript,
   SiJavascript,
@@ -15,6 +15,9 @@ import {
   SiGooglecloud,
   SiRubyonrails,
   SiRuby,
+  SiSlack,
+  SiNotion,
+  SiRedmine
 } from "react-icons/si";
 
 const skills = [
@@ -45,10 +48,6 @@ const skills = [
     ],
   },
   {
-    title: "Version Control Tools",
-    skills: [{ name: "Git", icon: <FaGitAlt /> }],
-  },
-  {
     title: "AWS",
     skills: [
       { name: "EC2", icon: <SiAmazonec2 /> },
@@ -63,6 +62,14 @@ const skills = [
     skills: [
       { name: "Firestore", icon: <SiGooglecloud /> },
       { name: "Authentication", icon: <SiGooglecloud /> },
+    ],
+  },
+  {
+    title: "Others",
+    skills: [
+      { name: "Slack", icon: <SiSlack /> },
+      { name: "Notion", icon: <SiNotion /> },
+      { name: "Redmine", icon: <SiRedmine /> }
     ],
   },
 ];
