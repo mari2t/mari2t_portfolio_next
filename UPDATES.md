@@ -1,5 +1,13 @@
 # UPDATES
 
+## 2025/08/26
+
+1. Add alcohol ratio calculator.
+
+## 2025/08/25
+
+1. Update to reflect recent changes.
+
 ## 2025/3/31
 
 1. Update to reflect recent changes.

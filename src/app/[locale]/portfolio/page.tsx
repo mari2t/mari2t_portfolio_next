@@ -14,9 +14,17 @@ import { SiRubyonrails, SiShadcnui } from "react-icons/si";
 
 const projects = [
   {
+    title: "alcohol_ratio_calculator",
+    overview: "Alcohol Ratio Calculator",
+    useTech: "Typescript,Next,shadcn/ui",
+    creationday: "2024/12/31",
+    imgUrl: "/img/imgAlcohol Ratio Calculator.png",
+    githubUrl: "https://github.com/mari2t/alcohol_ratio_calculator",
+  },
+  {
     title: "analog_timer",
     overview: "Analog Timer",
-    useTech: "Typescript,Next,Tailwind CSS,Shadcn",
+    useTech: "Typescript,Next,Tailwind CSS,shadcn/ui",
     creationday: "2024/11/19",
     imgUrl: "/img/imgAnalogTimer.png",
     githubUrl: "https://github.com/mari2t/rainbow_analog_timer",
@@ -210,7 +218,7 @@ const TechIcon = ({ techName }: TechIconProps) => {
       {techName === "Tailwind CSS" && (
         <BiLogoTailwindCss className="text-blue-800" size="1.6em" />
       )}
-      {techName === "Shadcn" && (
+      {techName === "shadcn/ui" && (
         <SiShadcnui className="text-blue-800" size="1.6em" />
       )}
       {techName === "Next" && (
